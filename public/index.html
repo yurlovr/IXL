@@ -1,41 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/normolize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</head>
+<body>
+<header class="header">
+    <section class="header-top">
+        <div class="header-top_nav">
+            <p class="header-top_nav-logo_wrapper">
+                <a class="header-top_logo" href="#">
+                    <img src="./image/icon-ixl-logo-156.png" alt="Учусь" width="156" height="56">
+                </a>
+            </p>
+            <p class="header-top_search">
+                <label for="search">
+                    <button type="button" class="header-top_search-label btn-null"></button>
+                </label>
+                <input class="header-top_search-input" type="search" autocomplete="off" name="search" id="search" maxlength="200" placeholder="Поиск заданий">
+            </p>
+        </div>
+    </section>
+    <section class="header-bottom">
+        <div class="header-bottom_nav">
+            <div class="header-bottom_nav-left">
+                <ul class="header-bottom_list">
+                    <li class="header-bottom_item">
+                        <a class="header-bottom_link" href="#">Обучение</a>
+                    </li>
+                    <li class="header-bottom_item">
+                        <a class="header-bottom_link" href="#">Аналитика</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-bottom_nav-right">
+                <ul class="header-bottom_list">
+                    <li class="header-bottom_item">
+                        <a class="header-bottom_link -member" href="#">Наш Клуб</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+    <section class="featured">
+    </section>
+    <section class="main">
+        <ul class="main-list">
+            <li class="main-item">
+                <section class="class class_1">
+                    <a class="class-link class-link_1 " href="#">1</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link1" href="#">Первый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_2">
+                    <a class="class-link class-link_2" href="#">2</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link2" href="#">Второй класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Сложение и вычитание. Время. Единицы измерения и многое другое.
+                            Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_3">
+                    <a class="class-link class-link_3" href="#">3</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link3" href="#">Третий класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_4">
+                    <a class="class-link class-link_4" href="#">4</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link4" href="#">Четвертый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_5">
+                    <a class="class-link class-link_5" href="#">5</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link5" href="#">Пятый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_6">
+                    <a class="class-link class-link_6" href="#">6</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link6" href="#">Шестой класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_7">
+                    <a class="class-link class-link_7" href="#">7</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link7" href="#">Седьмой класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_8">
+                    <a class="class-link class-link_8" href="#">8</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link8" href="#">Восьмой класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_9">
+                    <a class="class-link class-link_9" href="#">9</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link9" href="#">Девятый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_10">
+                    <a class="class-link class-link_10" href="#">10</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link10" href="#">Десятый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_11">
+                    <a class="class-link class-link_11" href="#">11</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link11" href="#">Одиннадцатый класс</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="main-item">
+                <section class="class class_12">
+                    <a class="class-link class-link_12" href="#">?</a>
+                    <h2 class="class-header">
+                        <a class="class-header_link12" href="#">Подготовка в ВУЗ</a>
+                    </h2>
+                    <div class="class-wrapper">
+                        <p class="class-description">
+                            Сложение и вычитание. Время. Единицы измерения и <span class="class-description_more">многое другое.</span>
+                        </p>
+                        <ul class="class-footer links-list">
+                            <li class="link-item">
+                                <span class="link-description">Математика</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                            <li class="link-item"><span class="link-description">Грамота</span>
+                                <a class="link-link" href="#"><span class="link-link_text">231</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer></footer>
+<div id="root"></div>
+</body>
 </html>
