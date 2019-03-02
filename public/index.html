@@ -19,11 +19,27 @@
                 </a>
             </p>
             <p class="header-top_search">
-                <label for="search">
-                    <button type="button" class="header-top_search-label btn-null"></button>
-                </label>
-                <input class="header-top_search-input" type="search" autocomplete="off" name="search" id="search" maxlength="200" placeholder="Поиск заданий">
+                <button type="button" class="header-top_search-label btn-null">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 15.97 15.981" xml:space="preserve">
+                        <path class="search_icon" fill="#bfbfbf" d="M15.604,13.831l-3.14-3.14c0.795-1.158,1.2-2.512,1.2-3.852c0-1.758-0.669-3.503-1.996-4.843 C10.328,0.67,8.583,0,6.825,0C5.08,0,3.336,0.67,1.996,1.996C0.67,3.336,0,5.08,0,6.839c0,1.745,0.67,3.489,1.996,4.83 c1.34,1.325,3.085,1.996,4.829,1.996c1.354,0,2.708-0.391,3.866-1.186l3.141,3.126c0.488,0.503,1.284,0.503,1.773,0 C16.092,15.115,16.092,14.32,15.604,13.831z M10.494,10.495c-0.993,1.01-2.302,1.507-3.627,1.507c-1.308,0-2.617-0.497-3.61-1.507 C2.247,9.501,1.75,8.193,1.75,6.884c0-1.308,0.497-2.633,1.507-3.627c0.994-0.994,2.302-1.507,3.61-1.507 c1.325,0,2.634,0.513,3.627,1.507c0.994,0.994,1.507,2.319,1.507,3.627C12.002,8.193,11.505,9.501,10.494,10.495z"/>
+                    </svg>
+                </button>
+                <input class="header-top_search-input" type="search" autocomplete="off" name="search" id="search"
+                       maxlength="200" placeholder="Поиск заданий">
             </p>
+            <section class="header-top_registration">
+                <form class="registration-form" action="">
+                    <label for="login_login">
+                        <input class="registration-form_input" id="login_login" type="text" placeholder="Логин">
+                    </label>
+                    <label for="login_password">
+                        <input class="registration-form_input" id="login_password" type="password" placeholder="Пароль">
+                    </label>
+                    <button class="btn-null registration-form_button  -member">Войти</button>
+                </form>
+                <button class="btn-null registration-form_button registration-form_button-reg  -member">Регистрация
+                </button>
+            </section>
         </div>
     </section>
     <section class="header-bottom">
@@ -48,10 +64,59 @@
         </div>
     </section>
 </header>
-<main>
+<main class="main">
     <section class="featured">
+        <h2 class="featured_header">
+            <a class="featured_header-link" href="#">Придумать заголовок</a>
+        </h2>
+        <ul class="featured_list">
+            <li class="featured_item">
+                <h3 class="featured_item-header featured_item-header-first">Комплексные тесты</h3>
+                <p class="featured_item-description featured_item-description_first">
+                    <a href="#">Математика</a>
+                    <span class="featured_item-description_first-bull">	&bull; </span>
+                    <a href="#">Грамота</a>
+                    <span class="featured_item-description_first-bull">	&bull; </span> <br/>
+                    <i>и другие предметы... </i>
+                </p>
+                <a class="featured_item-description-link" href="#"></a>
+            </li>
+            <li class="featured_item">
+                <h3 class="featured_item-header featured_item-header-second">
+                    Доверие педагогов и родителей
+                </h3>
+                <p class="featured_item-description featured_item-description_second">
+                    Более
+                    <a href="#"><strong><i>1 миллиона</i></strong></a> тестов по всем предметам школьной программы.
+                </p>
+            </li>
+            <li class="featured_item">
+                <h3 class="featured_item-header featured_item-header-third">Индивидуальный подход</h3>
+                <p class="featured_item-description featured_item-description_third">
+                    <ul class="featured_item-description_third-list">
+                        <li class="featured_item-description_third-item">
+                            <a href="#">
+                                Аналитика
+                            </a>
+                        </li>
+                        <li class="featured_item-description_third-item">
+                            <span class="featured_item-description_third-bull">	&bull; &nbsp;	 </span>
+                            <a href="#">
+                                Рекомендации
+                            </a>
+                        </li>
+                        <li class="featured_item-description_third-item">
+                            <a href="#">
+                                Награды
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="featured_item-description-link featured_item-description-link-third" href="#"></a>
+                </p>
+            </li>
+        </ul>
     </section>
-    <section class="main">
+    <section class="main_block">
         <ul class="main-list">
             <li class="main-item">
                 <section class="class class_1">
@@ -321,7 +386,7 @@
         </ul>
     </section>
 </main>
-<footer></footer>
+<footer class="footer"></footer>
 <div id="root"></div>
 </body>
 </html>
