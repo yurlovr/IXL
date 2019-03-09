@@ -2,7 +2,8 @@ body {
   margin: 0 auto;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: medium;
-  width: auto;
+  min-width: 1740px;
+  background: linear-gradient(to bottom, #bbffe4, #efffa7);
 }
 
 ul {
@@ -30,10 +31,11 @@ a {
 .header-top {
   height: 39px;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 .header-top_nav {
   display: flex;
