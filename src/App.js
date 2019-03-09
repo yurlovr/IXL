@@ -201,15 +201,7 @@ class App extends Component {
         ]
       },
   ];
-    this.renderBlock = this.renderBlock.bind(this)
-  }
 
-  renderBlock () {
-    return(
-      this.classBlock.map((i)=>{
-        return <Main classBlock={this.classBlock} key={Math.random()}/>
-      })
-    );
   }
 
   render() {
@@ -220,8 +212,7 @@ class App extends Component {
           <Featured/>
           <section className="main_block">
             <ul className="main-list">
-              {this.renderBlock()}
-              {/*<Main classBlock={this.classBlock}/>*/}
+              <Main classBlock={this.classBlock}/>
             </ul>
           </section>
         </main>

@@ -45,17 +45,17 @@ class Header extends Component {
             <div className="header-bottom_nav-left">
               <ul className="header-bottom_list">
                 <li className="header-bottom_item">
-                  <a className="header-bottom_link" href="#">Обучение</a>
+                  <a className="header-bottom_link" href="https://www.google.ru">Обучение</a>
                 </li>
                 <li className="header-bottom_item">
-                  <a className="header-bottom_link" href="#">Аналитика</a>
+                  <a className="header-bottom_link" href="https://www.youtube.com">Аналитика</a>
                 </li>
               </ul>
             </div>
             <div className="header-bottom_nav-right">
               <ul className="header-bottom_list">
                 <li className="header-bottom_item">
-                  <a className="header-bottom_link -member" href="#">Наш Клуб</a>
+                  <a className="header-bottom_link -member" href="https://www.yandex.ru">Наш Клуб</a>
                 </li>
               </ul>
             </div>
