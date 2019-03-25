@@ -1,3 +1,126 @@
+.main_second-wrapper {
+  background-color: #f4f8fa;
+  width: 100%;
+}
+
+.site-nav-breadcrumb {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.site-nav-breadcrumb_list {
+  display: flex;
+}
+.site-nav-breadcrumb_item {
+  margin-right: 15px;
+  font-size: 14px;
+  position: relative;
+}
+.site-nav-breadcrumb_item:not(:last-child)::before {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  content: "||";
+  top: 0;
+  left: 57px;
+  color: #666;
+}
+.site-nav-breadcrumb_item:not(:first-child)::before {
+  left: 44px;
+}
+.site-nav-breadcrumb_item a {
+  color: #666;
+}
+.site-nav-breadcrumb_item a:hover {
+  color: #00a1de;
+}
+
+.main_second-page {
+  width: 100%;
+  background: linear-gradient(to bottom, #bbffe4, #efffa7);
+}
+.main_second-page_wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.main_second-page_left {
+  background-color: white;
+  width: 200px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.main_second-page_left_list {
+  padding-top: 200px;
+  margin-left: 35px;
+}
+.main_second-page_left_item {
+  margin-bottom: -7px;
+}
+.main_second-page_left_link {
+  width: 100%;
+  background-color: bisque;
+  display: block;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 40px 0 0 40px;
+}
+.main_second-page_right {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-color: #c8ffd5;
+}
+.main_second-page_right_header {
+  padding-left: 40px;
+  margin: 0;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 30px;
+  color: #00a1de;
+}
+.main_second-page_right_description {
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666666;
+}
+.main_second-page_right_block {
+  margin-right: 80px;
+}
+.main_second-page_right_block:nth-child(3n) {
+  margin-right: 0;
+}
+.main_second-page_right_block_list > li {
+  color: #666;
+  font-weight: 500;
+}
+.main_second-page_right_block_list_link {
+  color: #66668c;
+  font-size: 14px;
+  font-weight: normal;
+}
+.main_second-page_right_block_list_link:hover {
+  color: #00a1de;
+}
+.main_second-page_right_block_header {
+  padding-left: 40px;
+  font-weight: normal;
+  color: #8d33aa;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
 body {
   margin: 0 auto;
   font-family: "Roboto", "Arial", sans-serif;

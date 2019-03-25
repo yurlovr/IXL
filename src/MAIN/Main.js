@@ -11,7 +11,7 @@ class Main extends Component {
     return (
       this.props.classBlock.map((i) => {
         return (
-        <SubMain item={i}/>
+        <SubMain item={i} key={Math.random()}/>
         );
       })
     );

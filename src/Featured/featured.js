@@ -34,7 +34,7 @@ class Featured extends Component {
           </li>
           <li className="featured_item">
             <h3 className="featured_item-header featured_item-header-third">Индивидуальный подход</h3>
-            <p className="featured_item-description featured_item-description_third">
+            <article className="featured_item-description featured_item-description_third">
               <ul className="featured_item-description_third-list">
                 <li className="featured_item-description_third-item">
                   <a href="#">
@@ -54,7 +54,7 @@ class Featured extends Component {
                 </li>
               </ul>
               <a className="featured_item-description-link featured_item-description-link-third" href="#"></a>
-            </p>
+            </article>
           </li>
         </ul>
       </section>
